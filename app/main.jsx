@@ -1,14 +1,16 @@
 'use strict'
-import React from 'react'
-import {render} from 'react-dom'
-import { Provider } from 'react-redux'
+import React from 'react';
+import {render} from 'react-dom';
+import store from './store';
 
-import store from './store'
-import Root from './components/Root'
+
+import { Provider } from 'react-redux';
+import Root from './components/Root';
+// import Jokes from './components/Jokes'
 
 render (
   <Provider store={store}>
-    <Root/>
+    <Root />
   </Provider>,
   document.getElementById('main')
 )
